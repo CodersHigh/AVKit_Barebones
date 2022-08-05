@@ -21,5 +21,8 @@ struct VideoPlayView: View {
                 player = AVPlayer(url: videoPathURL)
                 player.play()
             }
+            .onDisappear {
+                player.pause()
+            }
     }
 }

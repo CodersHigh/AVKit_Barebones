@@ -29,7 +29,8 @@ struct ContentView: View {
                     NavigationLink(destination: VideoPlayView(video: videos[index])) {
                         EmptyView()
                     }
-                    .hidden()
+                    .buttonStyle(PlainButtonStyle())
+
                 }
                 .listRowSeparator(.hidden)
             }
