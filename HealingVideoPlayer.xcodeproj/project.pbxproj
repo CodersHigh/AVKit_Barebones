@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26433F76289C9A1B00A1EC71 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568518289BA12F0065E197 /* 1.mp4 */; };
+		26433F77289C9A1B00A1EC71 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568517289BA12F0065E197 /* 2.mp4 */; };
+		26433F78289C9A1B00A1EC71 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568515289BA12E0065E197 /* 3.mp4 */; };
+		26433F79289C9A1B00A1EC71 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568516289BA12E0065E197 /* 4.mp4 */; };
+		26433F7A289C9A1B00A1EC71 /* 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2656851A289BA1300065E197 /* 5.mp4 */; };
+		26433F7B289C9A1B00A1EC71 /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568519289BA12F0065E197 /* 6.mp4 */; };
+		2656851F289BA55F0065E197 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656851E289BA55F0065E197 /* VideoModel.swift */; };
 		26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */; };
 		26B50ECD289B90E800AAD8A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECC289B90E800AAD8A7 /* ContentView.swift */; };
-		26B50ECF289B90EA00AAD8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B50ECE289B90EA00AAD8A7 /* Assets.xcassets */; };
-		26B50ED2289B90EA00AAD8A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B50ED1289B90EA00AAD8A7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,7 @@
 		26568518289BA12F0065E197 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		26568519289BA12F0065E197 /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
 		2656851A289BA1300065E197 /* 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.mp4; sourceTree = "<group>"; };
+		2656851E289BA55F0065E197 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		26B50EC7289B90E800AAD8A7 /* AVKit_Barebones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVKit_Barebones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingVideoPlayerApp.swift; sourceTree = "<group>"; };
 		26B50ECC289B90E800AAD8A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +44,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26568514289BA1250065E197 /* video */ = {
+		26568514289BA1250065E197 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
 				26568518289BA12F0065E197 /* 1.mp4 */,
@@ -48,7 +54,7 @@
 				2656851A289BA1300065E197 /* 5.mp4 */,
 				26568519289BA12F0065E197 /* 6.mp4 */,
 			);
-			path = video;
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		2656851B289BA1B80065E197 /* View */ = {
@@ -57,6 +63,23 @@
 				26B50ECC289B90E800AAD8A7 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2656851C289BA53C0065E197 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				26568514289BA1250065E197 /* Videos */,
+				26B50ECE289B90EA00AAD8A7 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2656851D289BA54D0065E197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2656851E289BA55F0065E197 /* VideoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		26B50EBE289B90E800AAD8A7 = {
@@ -79,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */,
+				2656851C289BA53C0065E197 /* Resource */,
+				2656851D289BA54D0065E197 /* Model */,
 				2656851B289BA1B80065E197 /* View */,
-				26568514289BA1250065E197 /* video */,
-				26B50ECE289B90EA00AAD8A7 /* Assets.xcassets */,
 				26B50ED0289B90EA00AAD8A7 /* Preview Content */,
 			);
 			path = HealingVideoPlayer;
@@ -153,8 +176,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26B50ED2289B90EA00AAD8A7 /* Preview Assets.xcassets in Resources */,
-				26B50ECF289B90EA00AAD8A7 /* Assets.xcassets in Resources */,
+				26433F76289C9A1B00A1EC71 /* 1.mp4 in Resources */,
+				26433F77289C9A1B00A1EC71 /* 2.mp4 in Resources */,
+				26433F78289C9A1B00A1EC71 /* 3.mp4 in Resources */,
+				26433F79289C9A1B00A1EC71 /* 4.mp4 in Resources */,
+				26433F7A289C9A1B00A1EC71 /* 5.mp4 in Resources */,
+				26433F7B289C9A1B00A1EC71 /* 6.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B50ECD289B90E800AAD8A7 /* ContentView.swift in Sources */,
+				2656851F289BA55F0065E197 /* VideoModel.swift in Sources */,
 				26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +322,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AVKit_Barebones/Preview Content\"";
 				DEVELOPMENT_TEAM = 9GHM5422CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -323,7 +350,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AVKit_Barebones/Preview Content\"";
 				DEVELOPMENT_TEAM = 9GHM5422CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
