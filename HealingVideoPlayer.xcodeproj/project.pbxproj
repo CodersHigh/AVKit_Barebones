@@ -14,6 +14,7 @@
 		26433F7A289C9A1B00A1EC71 /* 따듯한 햇살.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2656851A289BA1300065E197 /* 따듯한 햇살.mp4 */; };
 		26433F7B289C9A1B00A1EC71 /* 바다와 자전거.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26568519289BA12F0065E197 /* 바다와 자전거.mp4 */; };
 		26433F7D289CAD2C00A1EC71 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26433F7C289CAD2C00A1EC71 /* VideoCardView.swift */; };
+		26433F7F289CB44700A1EC71 /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26433F7E289CB44700A1EC71 /* VideoPlayView.swift */; };
 		2656851F289BA55F0065E197 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656851E289BA55F0065E197 /* VideoModel.swift */; };
 		26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */; };
 		26B50ECD289B90E800AAD8A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECC289B90E800AAD8A7 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		26433F7C289CAD2C00A1EC71 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
+		26433F7E289CB44700A1EC71 /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
 		26568515289BA12E0065E197 /* 밤이 되어가는 도시2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "밤이 되어가는 도시2.mp4"; sourceTree = "<group>"; };
 		26568516289BA12E0065E197 /* 서둘러! 퇴근이다!.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "서둘러! 퇴근이다!.mp4"; sourceTree = "<group>"; };
 		26568517289BA12F0065E197 /* 밤이 되어가는 도시1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "밤이 되어가는 도시1.mp4"; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				26B50ECC289B90E800AAD8A7 /* ContentView.swift */,
 				26433F7C289CAD2C00A1EC71 /* VideoCardView.swift */,
+				26433F7E289CB44700A1EC71 /* VideoPlayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				2656851F289BA55F0065E197 /* VideoModel.swift in Sources */,
 				26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */,
 				26433F7D289CAD2C00A1EC71 /* VideoCardView.swift in Sources */,
+				26433F7F289CB44700A1EC71 /* VideoPlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
