@@ -11,7 +11,10 @@ import SwiftUI
 struct AVKit_BarebonesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                    .navigationTitle("Healing Video")
+            }
         }
     }
 }
