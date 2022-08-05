@@ -24,11 +24,7 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(0..<self.videos.count) { index in
-                Image(uiImage: (videos[index].thumnail))
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
-                    .padding(.top, 7)
+                VideoCardView(video: videos[index])
                     .listRowSeparator(.hidden)
             }
         }
