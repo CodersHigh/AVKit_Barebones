@@ -13,7 +13,7 @@ struct VideoCardView: View {
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {
-                // 이미지
+                // 이미지 : 비디오 썸네일 + 반투명한 검은색 막 씌우기
                 ZStack {
                     Image(uiImage: (video.thumnail))
                         .resizable()
@@ -24,7 +24,7 @@ struct VideoCardView: View {
                         .foregroundColor(.black.opacity(0.4))
                 }
                 .padding(.bottom, 7)
-                // 텍스트
+                // 텍스트 : 비디오 플레이타임 + 비디오 제목
                 VStack(alignment: .leading) {
                     Text("\(video.duration) sec")
                         .font(.caption).bold()

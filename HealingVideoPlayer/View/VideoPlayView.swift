@@ -9,20 +9,42 @@ import SwiftUI
 import AVKit
 
 struct VideoPlayView: View {
-    var video: Video
-    @State private var player = AVPlayer()
+    @StateObject var viewModel = PlayerViewModel()
+    let video: Video
     
     var body: some View {
-        VideoPlayer(player: player)
+        AVVideoPlayer(viewModel: viewModel, video: video)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                let videoPath = Bundle.main.path(forResource: video.videoName, ofType: "mp4")
-                let videoPathURL = URL(fileURLWithPath: videoPath!)
-                player = AVPlayer(url: videoPathURL)
-                player.play()
+                viewModel.play()
             }
             .onDisappear {
-                player.pause()
+                viewModel.pause()
             }
     }
+}
+
+struct AVVideoPlayer: UIViewControllerRepresentable {
+    @ObservedObject var viewModel: PlayerViewModel
+    let video: Video
+    
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(.playback)
+        } catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
+        
+        let videoPath = Bundle.main.path(forResource: video.videoName, ofType: "mp4")
+        let videoPathURL = URL(fileURLWithPath: videoPath!)
+        viewModel.player = AVPlayer(url: videoPathURL)
+        
+        let vc = AVPlayerViewController()
+        vc.player = viewModel.player
+        vc.canStartPictureInPictureAutomaticallyFromInline = true
+        return vc
+    }
+    
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) { }
 }

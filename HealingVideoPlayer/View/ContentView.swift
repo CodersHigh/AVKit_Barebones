@@ -25,12 +25,10 @@ struct ContentView: View {
         List {
             ForEach(0..<self.videos.count) { index in
                 ZStack {
-                    VideoCardView(video: videos[index])
+                    // 생김새는 VideoCardView, 누르면 VideoPlayView로 이동
                     NavigationLink(destination: VideoPlayView(video: videos[index])) {
-                        EmptyView()
+                        VideoCardView(video: videos[index])
                     }
-                    .buttonStyle(PlainButtonStyle())
-
                 }
                 .listRowSeparator(.hidden)
             }

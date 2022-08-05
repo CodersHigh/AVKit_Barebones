@@ -18,6 +18,7 @@
 		2656851F289BA55F0065E197 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656851E289BA55F0065E197 /* VideoModel.swift */; };
 		26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */; };
 		26B50ECD289B90E800AAD8A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50ECC289B90E800AAD8A7 /* ContentView.swift */; };
+		26DAB324289CFACC00D67B53 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DAB323289CFACC00D67B53 /* PlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		26B50ECC289B90E800AAD8A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26B50ECE289B90EA00AAD8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B50ED1289B90EA00AAD8A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26DAB323289CFACC00D67B53 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		26DAB325289CFC4B00D67B53 /* AVKit-Barebones-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AVKit-Barebones-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 		26B50EBE289B90E800AAD8A7 = {
 			isa = PBXGroup;
 			children = (
+				26DAB325289CFC4B00D67B53 /* AVKit-Barebones-Info.plist */,
 				26B50EC9289B90E800AAD8A7 /* HealingVideoPlayer */,
 				26B50EC8289B90E800AAD8A7 /* Products */,
 			);
@@ -109,6 +113,7 @@
 			children = (
 				26B50ECA289B90E800AAD8A7 /* HealingVideoPlayerApp.swift */,
 				2656851C289BA53C0065E197 /* Resource */,
+				26DAB322289CFAA300D67B53 /* ViewModel */,
 				2656851D289BA54D0065E197 /* Model */,
 				2656851B289BA1B80065E197 /* View */,
 				26B50ED0289B90EA00AAD8A7 /* Preview Content */,
@@ -122,6 +127,14 @@
 				26B50ED1289B90EA00AAD8A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26DAB322289CFAA300D67B53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26DAB323289CFACC00D67B53 /* PlayerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +215,7 @@
 				2656851F289BA55F0065E197 /* VideoModel.swift in Sources */,
 				26B50ECB289B90E800AAD8A7 /* HealingVideoPlayerApp.swift in Sources */,
 				26433F7D289CAD2C00A1EC71 /* VideoCardView.swift in Sources */,
+				26DAB324289CFACC00D67B53 /* PlayerViewModel.swift in Sources */,
 				26433F7F289CB44700A1EC71 /* VideoPlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +347,7 @@
 				DEVELOPMENT_TEAM = 9GHM5422CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AVKit-Barebones-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,6 +376,7 @@
 				DEVELOPMENT_TEAM = 9GHM5422CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AVKit-Barebones-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
