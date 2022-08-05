@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // 파일 이름에서 .mp4 확장자를 제거한 이름을 담은 Video 배열 생성
+    private var videos: [Video] = {
+        guard let path = Bundle.main.resourcePath, let files = try? FileManager.default.contentsOfDirectory(atPath: path) else { return [] }
+        var videos: [Video] = []
+        for fileName in files where fileName.hasSuffix("mp4") {
+            let videoName = fileName.replacingOccurrences(of: ".mp4", with: "")
+            let video = Video(videoName: videoName)
+            videos.append(video)
+        }
+        return videos
+    }()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
+        ZStack(alignment: .bottomLeading) {
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        }
     }
 }
