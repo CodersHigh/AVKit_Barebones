@@ -24,12 +24,14 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(0..<self.videos.count) { index in
-                NavigationLink {
-                    VideoPlayView(video: videos[index])
-                } label: {
+                ZStack {
                     VideoCardView(video: videos[index])
-                        .listRowSeparator(.hidden)
+                    NavigationLink(destination: VideoPlayView(video: videos[index])) {
+                        EmptyView()
+                    }
+                    .hidden()
                 }
+                .listRowSeparator(.hidden)
             }
         }
         .listStyle(.plain)
